@@ -1,34 +1,25 @@
-interface User {
-  seq: number;
-  id: string;
-  password: string;
-}
+import { UserDto } from './userDto';
+import { BoardDto } from './boardDto';
 
-interface Board {
-  seq: number;
-  title: string;
-  content: string;
-}
-
-const userData: User[] = [
+const userData: UserDto[] = [
   {
     seq: 1,
-    id: 'fisrt',
+    id: 'first',
     password: 'qwe123!@#',
   },
   {
-    seq: 1,
-    id: 'fisrt',
+    seq: 2,
+    id: 'second',
     password: 'qwe123!@#',
   },
   {
-    seq: 1,
-    id: 'fisrt',
+    seq: 3,
+    id: 'third',
     password: 'qwe123!@#',
   },
 ];
 
-const boardData: Board[] = [
+const boardData: BoardDto[] = [
   {
     seq: 1,
     title: '주제',
