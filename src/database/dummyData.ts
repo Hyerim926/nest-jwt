@@ -1,5 +1,4 @@
-import { UserDto } from './userDto';
-import { BoardDto } from './boardDto';
+import { UserDto } from '../auth/dto/user.dto';
 
 const userData: UserDto[] = [
   {
@@ -19,12 +18,4 @@ const userData: UserDto[] = [
   },
 ];
 
-const boardData: BoardDto[] = [
-  {
-    seq: 1,
-    title: '주제',
-    content: 'jwt를 이용한 사용자 인증',
-  },
-];
-
-export { userData, boardData };
+export { userData };
